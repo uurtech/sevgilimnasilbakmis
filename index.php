@@ -14,7 +14,8 @@ if(isset($_SESSION['resim'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-   
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <style type="text/css">
     html{
         font-family: 'Raleway', sans-serif;
@@ -254,15 +255,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
 </header>
 
 <center>
-<!-- SevgilimNasılBakmıs -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklam -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
+     style="display:block"
      data-ad-client="ca-pub-3789690953881934"
-     data-ad-slot="9493396273"></ins>
+     data-ad-slot="2843643548"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 </center>
 <body>
 
@@ -323,25 +327,29 @@ if($true){
     Coding <a href="https://ugurkazdal.com/" title="Uğur KAZDAL" target="_blank">Uğur KAZDAL</a><br/>
     Logo Credits <a href="https://www.instagram.com/eiko_jonevans/" target="_blank" title="Logo Credits">Karla Sepulveda</a><br/>
     Loading Spinner <a href="https://codepen.io/mikeambrosi/" target="_blank">Miguel Ambrosi</a><br/>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101420301-5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133420208-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-101420301-5');
+  gtag('config', 'UA-133420208-1');
 </script>
 
 </footer>
 <center>
-<!-- SevgilimNasılBakmıs -->
+<!-- Reklam -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
+     style="display:block"
      data-ad-client="ca-pub-3789690953881934"
-     data-ad-slot="9493396273"></ins>
+     data-ad-slot="2843643548"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

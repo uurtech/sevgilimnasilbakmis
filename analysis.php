@@ -54,5 +54,6 @@ for($j = 0; $j<$yuzSayisi; $j++){
 $data = array();
 $data['emotions'] = $emotions;
 $data['positions'] = $positions;
+file_put_contents("/var/logs/test",json_encode($data));
 echo json_encode($data);
 ?>
