@@ -2,9 +2,10 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-$resim = $_GET['resim'];
+session_start();
+$resim = "https://snb.ugurkazdal.com/".$_SESSION['resim'];
 require 'vendor/autoload.php';
-$client = new GuzzleHttp\Client(['headers' => ['Content-Type' =>  'application/json' , 'Ocp-Apim-Subscription-Key' => 'BURAYA_KEY']]);
+$client = new GuzzleHttp\Client(['headers' => ['Content-Type' =>  'application/json' , 'Ocp-Apim-Subscription-Key' => '']]);
 $res = $client->post('https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize',[
     GuzzleHttp\RequestOptions::JSON => ['url' => $resim]
 ]);
@@ -14,7 +15,6 @@ if($res->getStatusCode() == 200){
 } 
 
 $yuzSayisi = count($json);
-
 
 $emotions = array();
 

@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 $url = "";
-if(isset($_GET['resim'])){
-    $true = true;
+if(isset($_SESSION['resim'])){
+    $resimVarmi = true;
     $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 }
 ?>
@@ -269,8 +269,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
 <div class="imageDisDiv">
     <div class="image">
     <?php
-    if($true){
-    echo '<img src="'.$_GET['resim'].'"/>';
+    if($resimVarmi){
+    echo '<img src="'.$_SESSION['resim'].'"/>';
     }else{
     echo '<img src="couple.jpg" id="resim">';
     }
@@ -390,13 +390,13 @@ $(function() {
                 reader.readAsDataURL(input.files[0]);
             }
         }
-        var resim = getUrlParameter("resim");
+       
 if(resim != null){
     $(".spanback").css("display","none");
     $(".inner-image").css("display","none");
     $(".cssload-container").css("display","block");
     $(".custom-file-control").html("Lütfen Bekleyin");
-    $.get("analysis.php?resim=https://sevgilimnasilbakmis.com/"+resim,function(data){
+    $.get("analysis.php",function(data){
         var data = jQuery.parseJSON(data);
         var suratSayisi = data['emotions'].length;
         var emos = new Array(suratSayisi);
